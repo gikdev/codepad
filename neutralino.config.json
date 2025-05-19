@@ -1,0 +1,29 @@
+{
+  "applicationId": "js.neutralino.zero",
+  "version": "1.0.0",
+  "defaultMode": "window",
+  "documentRoot": "/src/dist/",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "nativeAllowList": [
+    "app.*"
+  ],
+  "modes": {
+    "window": {
+      "title": "codepad",
+      "width": 800,
+      "height": 500,
+      "minWidth": 400,
+      "minHeight": 200,
+      "icon": "/src/public/vite.svg"
+    }
+  },
+  "cli": {
+    "binaryName": "codepad",
+    "resourcesPath": "/src/dist/",
+    "extensionsPath": "/extensions/",
+    "binaryVersion": "6.0.0",
+    "clientVersion": "6.0.0"
+  }
+}
