@@ -1,11 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
-  background-color: #1e1e1e;
+  background-color: #111113;
+  color: #b0b4ba;
+  font-family: "JetBrains Mono", sans-serif;
 }
 
 body {
   margin: 0;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.top-bar {
+  background: #212225;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+
+  select {
+    background: #212225;
+    border: 1px solid #43484e;
+    color: #b0b4ba;
+  }
+}
+
 .editor {
-  border: 1px solid gray;
+  border: 1px solid #43484e;
+  min-height: 80dvh;
+  max-height: 80dvh;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.vim-section {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #18191b;
+  color: #b0b4ba;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-family: "JetBrains Mono", monospace;
 }
